@@ -36,7 +36,8 @@ a:is(:hover, :focus) {
 
 .line-container {
     display: flex;
-    align-items: center;
+    align-items: start;
+    justify-content: start;
     flex-direction: column;
     gap: 10px;
 }

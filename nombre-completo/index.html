@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nombre Completo</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="title">Saludos</h1>
+    <form method="post" action="nombreCompleto.php">
+
+      <div style="display: flex; flex-direction: column; gap: 20px">
+        <div style="display: flex; flex-direction: row">
+          <label for="nombre">Ingrese su nombre:</label>
+          <input name="nombre" id="nombre" type="text"/>
+        </div>
+        <div style="display: flex; flex-direction: row">
+          <label for="apellido">Ingrese su apellido:</label>
+          <input type="text" name="apellido" id="apellido"/>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: row; margin-top: 20px; gap: 20px">
+        <label for="horarioFormal">Ingrese un horario para un saludo formal: </label>
+        <input type="text" name="horarioFormal" id="horarioFormal"/>
+        <button type="submit" name="submitFormal">Enviar</button>
+      </div>
+
+      <div style="display: flex; flex-direction: row; margin-top: 20px; gap: 20px">
+        <label for="horarioInformal">Ingrese un horario para un saludo informal: </label>
+        <input type="text" name="horarioInformal" id="horarioInformal"/>
+        <button type="submit" name="submitInformal">Enviar</button>
+      </div>
+
+    </form>
+  </div>
+</body>
+</html>
