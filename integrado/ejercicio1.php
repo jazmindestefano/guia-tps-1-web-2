@@ -26,11 +26,8 @@
     ?>
 
     <h2> Cargar nueva imagen </h2>
-    <form action="ejercicio1.php" method="post" enctype="multipart/form-data">
-
-        <label for="imagen">Seleccione una imagen:</label>
+    <form action="upload.php" method="post" enctype="multipart/form-data" style="display: flex">
         <input type="file" name="imagen" id="imagen"><br>
-
         <input type="submit" name="submit" value="Cargar imagen">
     </form>
 
