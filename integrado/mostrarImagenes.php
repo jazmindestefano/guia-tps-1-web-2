@@ -1,6 +1,6 @@
 <?php include 'header.php'; ?>
 
-<div class="body-container">
+<div class="body-container" style="width: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column;">
     <h2> Mis imágenes </h2>
 
     <?php

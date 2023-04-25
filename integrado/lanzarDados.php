@@ -1,4 +1,4 @@
-<?php include '../common/header.php'; ?>
+<?php include 'header.php'; ?>
 
 
 <div  style="width: 100%; height: 650px; display: flex; align-items: center; justify-content: center; ">
@@ -16,4 +16,4 @@
 </div>
 
 
-<?php include '../common/footer.php'; ?>
+<?php include 'footer.php'; ?>
