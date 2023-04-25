@@ -1,3 +1,8 @@
+<?php
+// Define la URL del archivo PDF que deseas cargar en el iframe
+$pdf_url = 'https://ejemplo.com/archivo.pdf';
+?>
+
 <?php include 'header.php'; ?>
 
 <?php
