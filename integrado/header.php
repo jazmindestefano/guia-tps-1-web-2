@@ -1,9 +1,17 @@
+
+
 <?php
-$ejercicio = '';
+/*$ejercicio = '';
 if(isset($_GET['ejercicio'])) {
     $ejercicio = $_GET['ejercicio'];
 }
+ *
+ * */
+
 ?>
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
