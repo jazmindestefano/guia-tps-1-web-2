@@ -8,7 +8,7 @@ if(isset($_GET['ejercicio'])) {
 <html>
 <head>
     <title>Jazmin De Stefano</title>
-    <link rel="stylesheet" href="integrado.css">
+    <link rel="stylesheet" href="../integrado.css">
 
 </head>
 <body>
@@ -17,9 +17,9 @@ if(isset($_GET['ejercicio'])) {
     </div>
     <nav>
         <ul>
-            <li><a href="mostrarImagenes.php">Mostrar Imagenes</a></li>
-            <li><a href="ejercicio2.php">Mostrar nombre de imagenes</a></li>
-            <li><a href="#">Ejercicio 3</a></li>
+            <li><a href="../mostrarImagenes.php">Mostrar Imagenes</a></li>
+            <li><a href="../mostrarNombreImagenes.php">Mostrar nombre de imagenes</a></li>
+            <li><a href="../lanzar_dados/lanzarDados.php">Lanzar Dados</a></li>
             <li><a href="#">Ejercicio 4</a></li>
             <li><a href="#">Ejercicio 5</a></li>
         </ul>
