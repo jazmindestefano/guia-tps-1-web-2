@@ -1,14 +1,17 @@
 <?php include 'header.php'; ?>
 
-    <nav>
-        <ul>
-            <li><a href="ejercicio1.php">Ejercicio 1</a></li>
-            <li><a href="ejercicio2.php">Ejercicio 2</a></li>
-            <li><a href="ejercicio3.php">Ejercicio 3</a></li>
-            <li><a href="ejercicio4.php">Ejercicio 4</a></li>
-            <li><a href="ejercicio5.php">Ejercicio 5</a></li>
-        </ul>
-    </nav>
+<?php
+if(isset($ejercicio)) {
+    $archivo_ejercicio = "ejercicio$ejercicio.php";
+    if(file_exists($archivo_ejercicio)) {
+        include $archivo_ejercicio;
+    } else {
+        echo "<p>No se encontró el archivo del ejercicio.</p>";
+    }
+} else {
+    echo '<p>aca deberia ir un pdf con los ejercicios</p>';
+}
+?>
 
 
 
@@ -16,4 +19,3 @@
 
 
 
-<?php
