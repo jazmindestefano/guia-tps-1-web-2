@@ -3,14 +3,18 @@
     <head>
         <title>Semaforo</title>
         <style>
-            .body-container {
+            body {
                 background: #1f2c34;
                 width: 100vw;
                 height: 100vh;
+            }
+
+            .body-container {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 flex-direction: column;
+                color: white;
             }
 
             h1, label {
@@ -38,21 +42,27 @@
                 align-items: center;
                 gap: 10px;
             }
-
         </style>
     </head>
-    <body class="body-container">
+    <body>
 
-    <div>
-        <h1>Funcion semaforo if-else</h1>
-        <form method="post" action="">
-            <label for="colorIfElse">Color:</label>
-            <input type="text" name="colorIfElse" id="colorIfElse">
-            <button type="submit" name="submitIfElse">Enviar</button>
-        </form>
-    </div>
+    <header style="width: 100%; height: 100px">
+        <button style="width: 100px; height: 50px; border-radius: 10px">
+            <a href="../index.html" style="text-decoration: none; color: black">Menu principal</a>
+        </button>
+    </header>
 
-    <?php
+    <main class="body-container">
+        <div>
+            <h1>Funcion semaforo if-else</h1>
+            <form method="post" action="">
+                <label for="colorIfElse">Color:</label>
+                <input type="text" name="colorIfElse" id="colorIfElse">
+                <button type="submit" name="submitIfElse">Enviar</button>
+            </form>
+        </div>
+
+        <?php
         $colorIfElse = $_POST["colorIfElse"];
 
         if(isset($_POST["submitIfElse"])) {
@@ -66,18 +76,18 @@
                 echo "<p>estado desconocido</p>";
             }
         }
-    ?>
+        ?>
 
-    <div>
-        <h1>Funcion semaforo if-inline</h1>
-        <form method="post" action="">
-            <label for="colorIfInline">Color:</label>
-            <input type="text" name="colorIfInline" id="colorIfInline">
-            <button type="submit" name="submitIfInline">Enviar</button>
-        </form>
-    </div>
+        <div>
+            <h1>Funcion semaforo if-inline</h1>
+            <form method="post" action="">
+                <label for="colorIfInline">Color:</label>
+                <input type="text" name="colorIfInline" id="colorIfInline">
+                <button type="submit" name="submitIfInline">Enviar</button>
+            </form>
+        </div>
 
-    <?php
+        <?php
         $colorIfInline = $_POST["colorIfInline"];
 
         if(isset($_POST["submitIfInline"])) {
@@ -85,38 +95,39 @@
                 (($colorIfInline == "amarillo") ? "<p style='font-size: 18px; color: burlywood'>Usted deberia tener precaucion.</p>" :
                     (($colorIfInline == "verde") ?  "<p style='font-size: 18px; color: green'>Usted puede avanzar.</p>" : "estado desconocido"));
         }
-    ?>
+        ?>
 
-    <div>
-        <h1>Funcion semaforo switch</h1>
-        <form method="post" action="">
-            <label for="colorSwitch">Color:</label>
-            <input type="text" name="colorSwitch" id="colorSwitch">
-            <button type="submit" name="submitSwitch">Enviar</button>
-        </form>
-    </div>
+        <div>
+            <h1>Funcion semaforo switch</h1>
+            <form method="post" action="">
+                <label for="colorSwitch">Color:</label>
+                <input type="text" name="colorSwitch" id="colorSwitch">
+                <button type="submit" name="submitSwitch">Enviar</button>
+            </form>
+        </div>
 
     </body>
 
     <?php
-        $colorSwitch = $_POST["colorSwitch"];
+    $colorSwitch = $_POST["colorSwitch"];
 
-        if(isset($_POST["submitSwitch"])) {
-            switch ($colorSwitch) {
-                case "rojo":
-                    echo  "<p style='font-size: 18px; color: red'>Usted deberia frenar.</p>";
-                    break;
-                case "verde":
-                    echo  "<p style='font-size: 18px; color: green'>Usted puede avanzar.</p>";
-                    break;
-                case "amarillo":
-                    echo  "<p style='font-size: 18px; color: burlywood'>Usted deberia tener precaucion.</p>";
-                    break;
-                default:
-                    echo "estado desconocido";
-            }
+    if(isset($_POST["submitSwitch"])) {
+        switch ($colorSwitch) {
+            case "rojo":
+                echo  "<p style='font-size: 18px; color: red'>Usted deberia frenar.</p>";
+                break;
+            case "verde":
+                echo  "<p style='font-size: 18px; color: green'>Usted puede avanzar.</p>";
+                break;
+            case "amarillo":
+                echo  "<p style='font-size: 18px; color: burlywood'>Usted deberia tener precaucion.</p>";
+                break;
+            default:
+                echo "estado desconocido";
         }
+    }
     ?>
+    </main>
 
 </html>
 
