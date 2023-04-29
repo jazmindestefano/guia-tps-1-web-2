@@ -21,9 +21,12 @@
 </head>
 <body>
     <header>
-        <h1>Control interplanetario</h1>
+        <button style="width: 100px; height: 50px; border-radius: 10px">
+            <a href="../index.html" style="text-decoration: none; color: black">Menu principal</a>
+        </button>
     </header>
     <main>
+        <h1>Control interplanetario</h1>
         <form action="procesar.php" method="post">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre"><br><br>

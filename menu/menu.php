@@ -21,9 +21,12 @@
 </head>
 <body>
 <header>
-    <h1>Menú del día</h1>
+    <button style="width: 100px; height: 50px; border-radius: 10px">
+        <a href="../index.html" style="text-decoration: none; color: black">Menu principal</a>
+    </button>
 </header>
 <main>
+    <h1>Menú del día</h1>
     <form action="procesarmenu.php" method="post">
         <label for="entrada">Entrada:</label>
         <input type="checkbox" id="entrada" name="pasos[]" value="entrada"><br><br>
