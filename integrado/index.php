@@ -1,8 +1,6 @@
 <?php include 'header.php'; ?>
 
 <?php
-
-/*
 if(isset($ejercicio)) {
     $archivo_ejercicio = "ejercicio$ejercicio.php";
     if(file_exists($archivo_ejercicio)) {
@@ -12,7 +10,7 @@ if(isset($ejercicio)) {
     }
 } else {
     echo '<p>aca deberia ir un pdf con los ejercicios</p>';
-} */
+}
 ?>
 
 
