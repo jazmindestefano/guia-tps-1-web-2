@@ -19,6 +19,22 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            width: 100%;
+            gap: 10px;
+        }
+
+        input {
+            width: 200px;
+            height: 25px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        button {
+            cursor: pointer;
         }
 
     </style>
@@ -31,7 +47,7 @@
             <input type="number" name="nro_aa" id="nro_aa">
             <label for="nro_aa">Segundo numero: </label>
             <input type="number" name="nro_ab" id="nro_ab"/>
-            <input type="submit" name="binomo_uno" value="Enviar">
+            <button type="submit" name="binomo_uno">Enviar</button>
         </form>
     </div>
 
@@ -61,7 +77,7 @@
             <input type="number" name="nro_ba" id="nro_ba">
             <label for="nro_bb">Segundo numero: </label>
             <input type="number" name="nro_bb" id="nro_bb"/>
-            <input type="submit" name="binomo_dos" value="Enviar">
+            <button type="submit" name="binomo_dos">Enviar</button>
         </form>
     </div>
 
